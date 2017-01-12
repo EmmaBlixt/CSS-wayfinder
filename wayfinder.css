@@ -1,0 +1,458 @@
+#wayfinder-container {
+  position: relative;
+  margin-left: 2em;
+  margin-top: 2em;
+}
+
+.wayfinder .shell {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  border-radius: 130% 0 70% 35% / 70% 0 130% 35%;
+  border: 5px solid #c7c7c7;
+  transform: rotate(-45deg);
+  margin-top: 20px;
+  margin-top: 4em;
+  margin-left: 4em;
+
+    background: #98ffbc; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#009032 ,#98ffbc); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#009032 ,#98ffbc); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#009032 ,#98ffbc); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#009032 ,#98ffbc); /* Standard syntax */
+}
+
+.wayfinder .top {
+  position: absolute;
+  width: 0;
+  height: 0;
+  float: left;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 15px solid #c7c7c7;
+  z-index: 1;
+  border-radius: 10px;
+  transform: rotate(25deg); 
+  margin-left: 50px;
+  margin-top: -15px;
+}
+
+.wayfinder .top:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  float: left;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 15px solid #c7c7c7;
+  z-index: 1;
+  border-radius: 10px; 
+  transform: rotate(40deg);
+  margin-left: -1px;
+  margin-top: -12px;
+}
+
+
+.wayfinder .rope {
+  position: relative;
+  float: left;
+  height: 17px;
+  width: 5px;
+  background: #735834;
+  margin-left: -48px;
+  margin-top: 15px;
+  border-radius: 5px; 
+  transform: rotate(100deg); 
+}
+
+
+ #center {
+    float: left;
+    position: relative;
+    width: 40px;
+    height: 30px;
+    margin-left: 72px;
+    margin-top: 57px;
+    z-index: 1;
+}
+ #center:before,
+ #center:after {
+  float: left;
+    position: absolute;
+    content: "";
+    left: 25px;
+    top: 0;
+    width: 25px;
+    height: 50px;
+    background: #8e8e8e;
+    -moz-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+ #center:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}
+
+
+#center #center-bottom {
+  left: 12px;
+  top: 25px;
+  width: 0;
+  height: 0;
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-bottom: 28px solid #8e8e8e;
+  position: relative;
+}
+#center #center-bottom:after {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 28px solid #8e8e8e;
+  position: absolute;
+  content: "";
+  top: 13px;
+  left: -10px;
+}
+
+#bottom-lines {
+  position: relative;
+  height: 6px;
+  width: 6px;
+  border-top: 1px solid #7b7b7b;
+  border-left: 1px solid #7b7b7b;
+  transform: rotate(45deg);
+  margin-left: 22px;
+  margin-top: 17px;
+  z-index: 1;
+}
+
+#lines {
+  width: 10px;
+  height: 10px;
+  border-top: solid #7b7b7b 1px;
+  border-left: solid #7b7b7b 1px;
+  z-index: 2;
+  position: relative;
+  transform: rotate(45deg);
+  margin-top: -10px;
+  margin-left: 20px;
+}
+
+#lines:before {
+  content: '';
+  position: absolute;
+  height: 4px;
+  width: 4px;
+  margin-top: 13px;
+  margin-left: 17px;
+  border-right: 1px solid #7b7b7b;
+  border-top: 1px solid #7b7b7b;
+}
+
+#lines:after {
+  content: '';
+  position: absolute;
+  height: 4px;
+  width: 4px;
+  margin-top: 17px;
+  margin-left: 13px;
+  border-left: 1px solid #7b7b7b;
+  border-bottom: 1px solid #7b7b7b;
+}
+
+#outside-lines {
+  position: relative;
+  z-index: 1;
+  height: 21px;
+  width: 36px;
+  border-bottom: solid 2px #7b7b7b;
+  border-left: solid 2px #7b7b7b;
+  transform: rotate(45deg);
+  margin-top: -20px;
+  margin-left: -7px;
+  border-radius: 3px;
+}
+
+#outside-lines:before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  height: 21px;
+  width: 36px;
+  border-top: solid 2px #7b7b7b;
+  border-left: solid 2px #7b7b7b;
+  transform: rotate(88deg);
+  margin-top: -19px;
+  margin-left: 16px;
+  border-radius: 3px;
+}
+
+
+
+.wayfinder-2 .shell {
+  float: left;
+  position: relative;
+  width: 55px;
+  height: 55px;
+  border-radius: 130% 0 70% 35% / 70% 0 130% 35%;
+  border: 5px solid #c7c7c7;
+  transform: rotate(20deg);
+  margin-top: -25px;
+  margin-left: 0.5em;
+
+    background: #98ffbc; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#009032 ,#98ffbc); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#009032 ,#98ffbc); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#009032 ,#98ffbc); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#009032 ,#98ffbc); /* Standard syntax */
+}
+
+.wayfinder-2 .top {
+  position: absolute;
+  width: 0;
+  height: 0;
+  float: left;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 15px solid #c7c7c7;
+  z-index: 1;
+  border-radius: 10px;
+  transform: rotate(25deg); 
+  margin-left: 50px;
+  margin-top: -15px;
+}
+
+.wayfinder-2 .top:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  float: left;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 15px solid #c7c7c7;
+  z-index: 1;
+  border-radius: 10px; 
+  transform: rotate(40deg);
+  margin-left: -1px;
+  margin-top: -12px;
+}
+
+.wayfinder-2 .rope {
+  position: relative;
+  float: left;
+  height: 17px;
+  width: 5px;
+  background: #735834;
+  margin-left: -7px;
+  margin-top: 13px;
+  border-radius: 5px; 
+  transform: rotate(100deg); 
+}
+
+
+.wayfinder-3 .shell {
+  float: left;
+  position: relative;
+  width: 55px;
+  height: 55px;
+  border-radius: 130% 0 70% 35% / 70% 0 130% 35%;
+  border: 5px solid #c7c7c7;
+  transform: rotate(100deg);
+  margin-top: 35px;
+  margin-left: -90px;
+
+    background: #98ffbc; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#009032 ,#98ffbc); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#009032 ,#98ffbc); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#009032 ,#98ffbc); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#009032 ,#98ffbc); /* Standard syntax */
+}
+
+.wayfinder-3 .top {
+  position: absolute;
+  width: 0;
+  height: 0;
+  float: left;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 15px solid #c7c7c7;
+  z-index: 1;
+  border-radius: 10px;
+  transform: rotate(25deg); 
+  margin-left: 50px;
+  margin-top: -15px;
+}
+
+.wayfinder-3 .top:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  float: left;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 15px solid #c7c7c7;
+  z-index: 1;
+  border-radius: 10px; 
+  transform: rotate(40deg);
+  margin-left: -1px;
+  margin-top: -12px;
+}
+
+.wayfinder-3 .rope {
+  position: relative;
+  float: left;
+  height: 17px;
+  width: 5px;
+  background: #735834;
+  margin-left: -7px;
+  margin-top: 25px;
+  border-radius: 5px; 
+  transform: rotate(100deg); 
+}
+
+
+.wayfinder-4 .shell {
+  float: left;
+  position: relative;
+  width: 55px;
+  height: 55px;
+  border-radius: 130% 0 70% 35% / 70% 0 130% 35%;
+  border: 5px solid #c7c7c7;
+  transform: rotate(175deg);
+  margin-top: 32px;
+  margin-left: -152px;
+
+    background: #98ffbc; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#009032 ,#98ffbc); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#009032 ,#98ffbc); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#009032 ,#98ffbc); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#009032 ,#98ffbc); /* Standard syntax */
+}
+
+.wayfinder-4 .top {
+  position: absolute;
+  width: 0;
+  height: 0;
+  float: left;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 15px solid #c7c7c7;
+  z-index: 1;
+  border-radius: 10px;
+  transform: rotate(25deg); 
+  margin-left: 50px;
+  margin-top: -15px;
+}
+
+.wayfinder-4 .top:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  float: left;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 15px solid #c7c7c7;
+  z-index: 1;
+  border-radius: 10px; 
+  transform: rotate(40deg);
+  margin-left: -1px;
+  margin-top: -12px;
+}
+
+.wayfinder-4 .rope {
+  position: relative;
+  float: left;
+  height: 17px;
+  width: 5px;
+  background: #735834;
+  margin-left: -7px;
+  margin-top: 25px;
+  border-radius: 5px; 
+  transform: rotate(100deg); 
+}
+
+.wayfinder-5 .shell { 
+  float: left;
+  position: relative;
+  width: 55px;
+  height: 55px;
+  border-radius: 130% 0 70% 35% / 70% 0 130% 35%;
+  border: 5px solid #c7c7c7;
+  transform: rotate(-105deg);
+  margin-top: -28px;
+  margin-left: -175px;
+
+    background: #98ffbc; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#009032 ,#98ffbc); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#009032 ,#98ffbc); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#009032 ,#98ffbc); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#009032 ,#98ffbc); /* Standard syntax */
+}
+
+.wayfinder-5 .top {
+  position: absolute;
+  width: 0;
+  height: 0;
+  float: left;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 15px solid #c7c7c7;
+  z-index: 1;
+  border-radius: 10px;
+  transform: rotate(25deg); 
+  margin-left: 50px;
+  margin-top: -15px;
+}
+
+.wayfinder-5 .top:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  float: left;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 15px solid #c7c7c7;
+  z-index: 1;
+  border-radius: 10px; 
+  transform: rotate(40deg);
+  margin-left: -1px;
+  margin-top: -12px;
+}
+
+.wayfinder-5 .rope {
+  position: relative;
+  float: left;
+  height: 17px;
+  width: 5px;
+  background: #735834;
+  margin-left: -8px;
+  margin-top: 35px;
+  border-radius: 5px; 
+  transform: rotate(90deg); 
+}
